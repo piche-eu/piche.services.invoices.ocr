@@ -1,6 +1,7 @@
 import os
 import pymupdf
 import pytesseract
+from PIL import Image
 from paddleocr import PaddleOCR
 from docling.document_converter import DocumentConverter
 

@@ -1,0 +1,3 @@
+[submodule "finetune/ml-fastvlm"]
+	path = finetune/ml-fastvlm
+	url = https://github.com/apple/ml-fastvlm
