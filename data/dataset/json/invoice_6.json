@@ -1,0 +1,85 @@
+{
+    "document": {
+        "article": "Art. 11",
+        "accompanying_document_number": "ART 251148",
+        "date": "2025. gada 17. aprīlī"
+    },
+    "sender": {
+        "name": "ARTRIAL SIA",
+        "registration_number": "40103604862",
+        "VAT_number": "LV40103604862",
+        "legal_address": "Purvciema iela 51-21, Rīga, LV-1035",
+        "issuing_address": "Rītupes 10, LV-1019 Rīga",
+        "bank_details": {
+            "bank": "Citadele banka AS",
+            "code": "PARXLV22",
+            "account": "LV64PARX0013680990003"
+        }
+    },
+    "receiver": {
+        "name": "PICHE SIA",
+        "registration_number": "40003743883",
+        "VAT_number": "LV40003743883",
+        "legal_address": "\"Vismani k-2\", Mārupes pag., Mārupes nov., LV-2167",
+        "delivery_address": "Lielmani, Mārupes pag",
+        "bank_details": {
+            "bank": "SWEDBANK",
+            "code": "HABALV22",
+            "account": "LV77HABA0551045495802"
+        }
+    },
+    "transport": {
+        "carrier_registration_number": null,
+        "driver": null,
+        "vehicle_number": null
+    },
+    "payment": {
+        "method": "Pārskaitījums",
+        "term": "35 dienas",
+        "due_date": "20.05.2025",
+        "total_amount": "723.10 EUR",
+        "basis": "Preču pārdošana un piegāde"
+    },
+    "items": [
+        {
+            "serial_number": 1,
+            "article": "TC100*20*2-6060T6/6-R AL9005",
+            "description": "Taisnstūra caurule 100x20x2, 6060-T6, L=6m, RAL9005 matt",
+            "unit": "m",
+            "quantity": 12.0,
+            "unit_price": 11.1,
+            "total_before_discount": 133.2,
+            "discount": 0.0,
+            "total": 133.2
+        },
+        {
+            "serial_number": 2,
+            "article": "RB25 40x20, 8-10mm S",
+            "description": "Bīlvgumija profilam U 40x20x40, melna 8-10mm stiklam",
+            "unit": "m",
+            "quantity": 600.0,
+            "unit_price": 0.86,
+            "total_before_discount": 516.0,
+            "discount": 51.6,
+            "total": 464.4
+        }
+    ],
+    "summary": {
+        "total_quantity": 612,
+        "total_before_discount": 649.2,
+        "discount_percentage": "7.95%",
+        "total_after_discount": 597.6,
+        "VAT_rate": "21%",
+        "total_amount_due": 597.6,
+        "currency": "EUR"
+    },
+    "issuer": {
+        "name": "Rigonda Kaņepe",
+        "date": "2025. gada 17. aprīlī"
+    },
+    "receiver_signature": {
+        "name": "Rigonda Krīžmane",
+        "date": "2025. gada 17. aprīlī"
+    },
+    "delivery_date": "15.04.2025"
+}

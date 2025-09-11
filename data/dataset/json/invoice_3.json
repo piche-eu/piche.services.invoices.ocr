@@ -1,0 +1,115 @@
+{
+  "documents": [
+    {
+      "type": "invoice",
+      "invoice_number": "64-4/24",
+      "date": "2024-04-25",
+      "issuer": {
+        "name": "SIA LS Customs Services",
+        "registration_number": "41203019800",
+        "vat_number": "LV41203019800",
+        "address": "Pils iela 70-2, Ventspils, LV-3601",
+        "bank": [
+          {
+            "name": "Luminor Bank AS Latvijas filiāle",
+            "code": "RIKO LV 2X",
+            "account": "LV34RIKO0002013010811"
+          },
+          {
+            "name": "AS Swedbank",
+            "code": "HABA LV 22",
+            "account": "LV84HABA0551038250261"
+          }
+        ]
+      },
+      "payer": {
+        "name": "SIA PICHE",
+        "registration_number": "40003743883",
+        "vat_number": "LV40003743883",
+        "address": "Dzirnieku iela 26, Mārupe, Mārupes pag., Mārupes nov., LV-2167",
+        "bank": {
+          "name": "AS Swedbank",
+          "code": "HABALV22",
+          "account": "LV77HABA0551045495802"
+        }
+      },
+      "items": [
+        {
+          "description": "Muitas brokera pakalpojums importa procedūrai 25/04/2024 MRN24LV000210R04385R0",
+          "quantity": 1,
+          "unit_price": 33.06,
+          "vat_rate": 21,
+          "total": 33.06
+        }
+      ],
+      "total_without_vat": 33.06,
+      "vat": 6.94,
+      "total_with_vat": 40.0,
+      "payment_term": "2024-05-05",
+      "preparer": {
+        "name": "Daiga Sūniņa",
+        "contact": {
+          "phone": "+371 257 555 28",
+          "email": "imports@lscustoms.lv"
+        }
+      }
+    },
+    {
+      "type": "cv",
+      "name": "Denys Sheverdin",
+      "title": ".NET Developer",
+      "summary": "Above three years of continuous commercial experience in software development using Microsoft technology stack. Strong knowledge of .NET development platform, web applications' infrastructure. Deep understanding of OOP. Self-motivated, easy learner, hard worker, and able to work with little supervision. Shows attention to detail, positive attitude and ability to learn and adapt quickly.",
+      "skills": {
+        "programming_languages": ["C#", "JavaScript", "TypeScript", "SQL"],
+        "frameworks": ["ASP .Net", "Entity Framework", "WPF", ".NET Framework", ".NET Core"],
+        "web_technologies": ["HTML 5", "CSS 3", "Angular"],
+        "databases": ["MS SQL Server", "MySQL", "SQLite"],
+        "virtualization": ["Docker"],
+        "cloud_platforms": ["Azure"],
+        "testing_tools": ["NUnit", "XUnit", "Cypress", "Selenium", "Jasmine"],
+        "version_control": ["GIT"],
+        "services": ["GitHub", "GitLab", "Azure DevOps"]
+      },
+      "experience": [
+        {
+          "project": "Report Management System",
+          "duration": "12/2020 - 01/2024",
+          "description": "The application provides a solution for hospitals to manage different kinds of reports, gather various parameters and filter data. Automate all routine processes and help to generate more helpful reports about business.",
+          "role": "Software Engineer",
+          "team_size": 8,
+          "technologies": ["C#", ".Net", "ASP.NET Web API", "Azure Functions", "Angular", "SQL Server"],
+          "responsibilities": [
+            "Refactoring legacy code",
+            "Fix bugs and errors",
+            "Developing backend functionality",
+            "Developing frontend functionality",
+            "Creating and maintaining RDB",
+            "Write integration and unit tests"
+          ]
+        },
+        {
+          "project": "Air Alarm System",
+          "description": "The project was written to help users to evacuate in time and be aware of air strike threats",
+          "role": "Software Engineer",
+          "team_size": 3,
+          "technologies": ["C#", ".Net 6", "WPF"],
+          "responsibilities": [
+            "Requirements analysis",
+            "Development and bug fixing",
+            "Unit test coverage",
+            "Code cross review"
+          ]
+        }
+      ],
+      "education": {
+        "institution": "Simon Kuznets Kharkiv National University of Economics",
+        "degree": "Bachelor's Degree in Computer Science"
+      },
+      "contact": {
+        "twitter": "@sheverdln",
+        "email": "20shev02@gmail.com",
+        "linkedin": "in/denis-sheverdin"
+      }
+    }
+  ]
+}

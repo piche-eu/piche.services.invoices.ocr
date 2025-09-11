@@ -1,0 +1,55 @@
+{
+    "invoice_number": "BBG146427",
+    "date": "2025-04-14",
+    "issuer": {
+        "name": "BB GROUP, SIA",
+        "tax_code": "LV40103224371",
+        "legal_address": "Austuves iela 3, Rīga, LV-1063",
+        "registration_number": "40103224371",
+        "issuance_address": "Austuves iela 3, Rīga, LV-1063",
+        "credit_institution": "Luminor banka AS",
+        "account_number": "LV91RIKO0002930274474",
+        "code": "RIKOLV2X"
+    },
+    "receiver": {
+        "name": "PICHE SIA",
+        "tax_code": "LV40003743883",
+        "legal_address": "Vismaņi K2, Mārupe, Mārupes novads, LV-2167",
+        "registration_number": "40003743883",
+        "receipt_address": "Priežu rezidences",
+        "credit_institution": "AS Swedbank",
+        "account_number": "LV77HABA0551045495802",
+        "code": "HABALV22"
+    },
+    "payment_terms": {
+        "due_date": "2025-05-24",
+        "payment_method": "Pārskaitījums",
+        "transaction_type": "Preču pārdošana/piegāde"
+    },
+    "items": [
+        {
+            "article": "DS13",
+            "description": "Zig - zag čūska 130 mm",
+            "unit": "Metri",
+            "quantity": 1250,
+            "unit_price": 0.797,
+            "total_price": 996.25
+        }
+    ],
+    "totals": {
+        "subtotal": 996.25,
+        "vat": 209.21,
+        "total": 1205.46,
+        "total_in_words": "Viens tūkstotis divi simti pleni EUR 48 centi"
+    },
+    "responsible_persons": {
+        "issuer": {
+            "name": "Aleksejs Fjodorōvis",
+            "date": "2025-04-14"
+        },
+        "receiver": {
+            "name": "",
+            "date": "2025-04-14"
+        }
+    }
+}

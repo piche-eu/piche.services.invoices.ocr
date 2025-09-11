@@ -1,0 +1,36 @@
+{
+  "invoice": {
+    "document_type": "Commercial Invoice",
+    "buyer": {
+      "address": "",
+      "email": "",
+      "mobile": ""
+    },
+    "seller": {
+      "name": "Foshan Green Lighting Co., Ltd",
+      "address": "Room 205, 2nd floor, Feipeng kitchen cabinet and lighting market, Lecong town, Shunde District, Foshan city",
+      "email": "sales04@fsgreenlighting.cn",
+      "mobile": "+86 15899566781",
+      "wechat_whatsapp": "+86 15899566781"
+    },
+    "invoice_details": {
+      "invoice_number": "GT20250403T",
+      "date": "2025-04-03"
+    },
+    "items": [
+      {
+        "number": 1,
+        "model": "LW-319",
+        "product": "Wall lamp",
+        "size_mm": "200x300",
+        "quantity_pcs": 2,
+        "unit_price_usd": 63.00,
+        "total_amount_usd": 126.00
+      }
+    ],
+    "totals": {
+      "total_amount_usd": 126.00,
+      "total_amount_in_words": "ONE HUNDRED TWENTY-SIX USD"
+    }
+  }
+}

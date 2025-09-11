@@ -1,0 +1,55 @@
+{
+  "document_type": "Commercial Invoice",
+  "shipper": {
+    "name": "Laisiao Integrated Home Co., Ltd (来斯奥集成家居股份有限公司)",
+    "address": "350 Xiumei Road, Wangdian Town, Jiaxing, Zhejiang, China, 314023",
+    "contact_person": "Karry",
+    "contact_number": "486-18857913523"
+  },
+  "billed_to": {
+    "name": "Piche SIA",
+    "address": "Vishami, k-2, Marupes pagasts, Marupes novads, LV-2167",
+    "contact_person": "Praveen",
+    "contact_number": "+371 25671881"
+  },
+  "consignee": {
+    "name": "Piche SIA",
+    "address": "Vishami, k-2, Marupes pagasts, Marupes novads, LV-2167",
+    "contact_person": "Praveen",
+    "contact_number": "+371 25671881"
+  },
+  "items": [
+    {
+      "item_number": 1,
+      "quantity": "170 Pieces",
+      "product_id": "G63",
+      "description": "Electric towel rack 650×600mm With Taya",
+      "unit_price": "USD 55.00",
+      "amount": "USD 9,350.00",
+      "comments": "MATTE BLACK finish Normal plug+straight Cable"
+    },
+    {
+      "item_number": 2,
+      "description": "Shipping cost",
+      "comments": "Charge as actual"
+    }
+  ],
+  "totals": {
+    "total_amount": "USD 9,350.00"
+  },
+  "payment_terms": {
+    "advance_payment": "30% in advance",
+    "balance_payment": "70% before delivery"
+  },
+  "hs_code": "8516799000",
+  "beneficiary": {
+    "name": "Laisiao Integrated Home Co., LTD",
+    "address": "350 Xiumei Road, Wangdian Town, Xiuzhou District, Jiaxing City, Zhejiang Province, China",
+    "account_number": "33050163803700000998"
+  },
+  "advise_through_bank": {
+    "name": "CHINA CONSTRUCTION BANK",
+    "address": "No.208 Ziyang Street, Jianshe Street, Nanhu District, Jiaxing City, Zhejiang Province, China",
+    "swift": "PCBCCNBJZJJ"
+  }
+}

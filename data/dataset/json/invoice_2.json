@@ -1,0 +1,277 @@
+{
+  "invoices": [
+    {
+      "date": "2024-03-28",
+      "invoice_number": "ELI 149904",
+      "sender": {
+        "name": "ELIKSS SIA",
+        "registration_number": "40003339140",
+        "vat_number": "LV40003339140",
+        "legal_address": "Rītupes iela 43, Rīga, LV-1019, Latvija",
+        "bank": "Swedbank",
+        "bank_code": "HABALV22",
+        "account": "LV88HABA0001408052192"
+      },
+      "receiver": {
+        "name": "Piche SIA",
+        "registration_number": "40003743883",
+        "vat_number": "LV40003743883",
+        "legal_address": "Dzirnieku 26, Mārupes pagasts, Mārupes novads",
+        "bank": "Swedbank",
+        "bank_code": "HABALV22",
+        "account": "LV77HABA0551045495802"
+      },
+      "items": [
+        {
+          "code": "001902",
+          "description": "NXG-8-BO - Apsardzes plate ar Ethernet 8-48 zonas 8 rajoni",
+          "quantity": 1,
+          "unit": "gab.",
+          "unit_price": 106.672,
+          "total": 106.672
+        },
+        {
+          "code": "003859",
+          "description": "Piegāde ar Venipak kurjeru",
+          "quantity": 1,
+          "unit": "gab.",
+          "unit_price": 6.4,
+          "total": 6.4
+        }
+      ],
+      "total_amount": 113.07,
+      "vat": 23.75,
+      "total_with_vat": 136.82,
+      "payment_term": "2024-04-27",
+      "delivery_date": "2024-03-28",
+      "issuer": "Juris Priedītis"
+    },
+    {
+      "date": "2024-04-03",
+      "invoice_number": "PRC24 05404",
+      "sender": {
+        "name": "Profcentrs SIA",
+        "registration_number": "50103188941",
+        "vat_number": "LV50103188941",
+        "legal_address": "Ventspils iela 63a, Rīga, LV1046, LATVIJA",
+        "bank": "Swedbank AS",
+        "bank_code": "HABALV22",
+        "account": "LV02HABA0551022084359"
+      },
+      "receiver": {
+        "name": "Piche SIA",
+        "registration_number": "40003743883",
+        "vat_number": "LV40003743883",
+        "legal_address": "Dzirnieku iela 26, Mārupe, Mārupes nov., LV-2167",
+        "bank": "Swedbank AS",
+        "bank_code": "HABALV22",
+        "account": "LV77HABA0551045495802"
+      },
+      "items": [
+        {
+          "code": "D522",
+          "barcode": "4016960250016",
+          "description": "Spaktelīāpsta BUKA silikonu izlīdzināšanai",
+          "quantity": 10,
+          "unit": "gb",
+          "unit_price": 1.62,
+          "total": 16.2
+        },
+        {
+          "code": "D603",
+          "barcode": "5412488317771",
+          "description": "Bīlvmateriāls šuvēm, P.E. ar slēgtām porām, 20mm",
+          "quantity": 10,
+          "unit": "m",
+          "unit_price": 0.205,
+          "total": 2.05
+        },
+        {
+          "code": "H8004",
+          "barcode": "8691451080578",
+          "description": "Hermētikis sanitārais CS25 (07)pelēks 280ml",
+          "quantity": 2,
+          "unit": "gb",
+          "unit_price": 4.621,
+          "total": 9.24
+        }
+      ],
+      "total_amount": 27.49,
+      "vat": 5.77,
+      "total_with_vat": 33.26,
+      "payment_term": "2024-04-03",
+      "delivery_date": "2024-04-03",
+      "issuer": "Gatis Ilvess"
+    },
+    {
+      "date": "2024-04-03",
+      "invoice_number": "PRO 202453873",
+      "sender": {
+        "name": "SIA PRODUS",
+        "legal_address": "Liepupes skola-4, Liepupes pag., Salacgrīvas nov., LV-4023",
+        "bank": "Citadele banka",
+        "account": "LV56PARX0016338090001"
+      },
+      "receiver": {
+        "name": "Piche SIA",
+        "legal_address": "Dzirnieku iela 26, Mārupe, Mārupes nov., LV-2167"
+      },
+      "items": [
+        {
+          "description": "Specelement RAL7016, PE",
+          "quantity": 1,
+          "unit_price": 39.02,
+          "total": 39.02
+        },
+        {
+          "description": "Specelement RAL7016, PE",
+          "quantity": 1,
+          "unit_price": 90.84,
+          "total": 90.84
+        },
+        {
+          "description": "Specelement RAL7016, PE",
+          "quantity": 1,
+          "unit_price": 22.08,
+          "total": 22.08
+        }
+      ],
+      "total_amount": 112.92,
+      "total_with_vat": 112.92,
+      "payment_term": "2024-05-03",
+      "delivery_date": "2024-04-03",
+      "issuer": "Jānis Pogulis",
+      "receiver_signature": "Zane Stumpe"
+    },
+    {
+      "date": "2024-04-02",
+      "invoice_number": "24G 05542",
+      "sender": {
+        "name": "STIPRO, SIA",
+        "registration_number": "40003618071",
+        "vat_number": "LV40003618071",
+        "legal_address": "Ganību dambis 40c, Rīga, LV-1005",
+        "bank": "Swedbank",
+        "account": "LV96HABA0551004009336"
+      },
+      "receiver": {
+        "name": "PICHE, SIA",
+        "registration_number": "40003743883",
+        "vat_number": "LV40003743883",
+        "legal_address": "Mārupes pag., Mārupe, Dzirnieku iela 26",
+        "bank": "Swedbank",
+        "account": "LV77HABA0551045495802"
+      },
+      "items": [
+        {
+          "code": "KU-5X160",
+          "description": "Konusveida urbis betonam 5x160/100",
+          "quantity": 10,
+          "unit_price": 7.848,
+          "total": 78.48
+        }
+      ],
+      "discount": 20,
+      "total_amount": 78.48,
+      "vat": 16.48,
+      "total_with_vat": 94.96,
+      "payment_term": "2024-05-17",
+      "delivery_date": "2024-04-02",
+      "issuer": "Laura Cigelmane",
+      "receiver_signature": "Helvijs Stalģis"
+    },
+    {
+      "date": "2024-03-28",
+      "invoice_number": "24G 05454",
+      "sender": {
+        "name": "STIPRO, SIA",
+        "registration_number": "40003618071",
+        "vat_number": "LV40003618071",
+        "legal_address": "Ganību dambis 40c, Rīga, LV-1005",
+        "bank": "Swedbank",
+        "account": "LV96HABA0551004009336"
+      },
+      "receiver": {
+        "name": "PICHE, SIA",
+        "registration_number": "40003743883",
+        "vat_number": "LV40003743883",
+        "legal_address": "Mārupes pag., Mārupe, Dzirnieku iela 26",
+        "bank": "Swedbank",
+        "account": "LV77HABA0551045495802"
+      },
+      "items": [
+        {
+          "code": "WBSW-100",
+          "description": "Skrūve jumta izol. dīb. 6.3X100 betonam Torx Delta (100)",
+          "quantity": 400,
+          "unit_price": 0.0962,
+          "total": 38.46
+        },
+        {
+          "code": "WBSW-120",
+          "description": "Skrūve jumta izol. dīb. 6.3X120 betonam Torx Delta (100)",
+          "quantity": 300,
+          "unit_price": 0.1083,
+          "total": 32.5
+        },
+        {
+          "code": "WBSW-140",
+          "description": "Skrūve jumta izol. dīb. 6.3X140 betonam Torx Delta (100)",
+          "quantity": 400,
+          "unit_price": 0.1226,
+          "total": 49.06
+        },
+        {
+          "code": "WBSW-160",
+          "description": "Skrūve jumta izol. dīb. 6.3X160 betonam Torx Delta (100)",
+          "quantity": 200,
+          "unit_price": 0.1495,
+          "total": 29.9
+        }
+      ],
+      "discount": 20,
+      "total_amount": 149.92,
+      "vat": 31.48,
+      "total_with_vat": 181.4,
+      "payment_term": "2024-05-12",
+      "delivery_date": "2024-03-28",
+      "issuer": "Monta Grīnšteine",
+      "receiver_signature": "Ilja Utkins"
+    },
+    {
+      "date": "2024-03-28",
+      "invoice_number": "VV24-00065",
+      "sender": {
+        "name": "AS VIRŠI-A",
+        "registration_number": "40003242737",
+        "vat_number": "LV40003242737",
+        "legal_address": "Kalna iela 17, Aizkraukle, Aizkraukles pag., Aizkraukles nov., LV-5101",
+        "bank": "UNLALV2X",
+        "account": "LV28UNLA0026000404101"
+      },
+      "receiver": {
+        "name": "SIA PICHE",
+        "registration_number": "40003743883",
+        "vat_number": "LV40003743883",
+        "legal_address": "Dzirnieku iela 26, Mārupe, Mārupes nov., LV-2167"
+      },
+      "items": [
+        {
+          "code": "27101943",
+          "description": "Dīzeļdegviela EVO (UN 1202 Dīzeļdegviela 3,III, Videi kaitīgs)",
+          "quantity": 8000,
+          "unit": "litri",
+          "unit_price": 1.240496,
+          "total": 9923.97
+        }
+      ],
+      "excise_duty": 3375.38,
+      "total_amount": 9923.97,
+      "vat": 2084.03,
+      "total_with_vat": 12008.0,
+      "payment_term": "2024-04-11",
+      "delivery_date": "2024-03-28",
+      "issuer": "Inese Rode"
+    }
+  ]
+}

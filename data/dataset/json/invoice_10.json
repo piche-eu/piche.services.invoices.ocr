@@ -1,0 +1,99 @@
+{
+  "document_type": "Preču pavadzīme-rēķins",
+  "invoice_number": "CS25-005398",
+  "date": "2025-04-08",
+  "cargo_number": "CKR313634",
+  "seller": {
+    "name": "Cita Santehnika SIA",
+    "legal_address": "Gunāra Astras iela 8, Rīga, LV-1082, Latvija",
+    "loading_address": "Rencēnu 7b, Rīga, LV-1073, Latvija",
+    "bank": {
+      "name": "Swedbank AS",
+      "code": "HABALV22",
+      "account": "LV90HABA0551033068801"
+    }
+  },
+  "buyer": {
+    "name": "Piche SIA",
+    "legal_address": "\"Vismaņi k-2\", Mārupe, Mārupes nov."
+  },
+  "receiver": {
+    "name": "Piche SIA",
+    "delivery_address": "Lieļmaņi, Mārupes nov. LV-2167"
+  },
+  "carrier": {
+    "name": "Cita Santehnika SIA",
+    "tax_code": "LV40003451144",
+    "vehicle_registration": "MT9344",
+    "driver": "Igors Aņikins",
+    "transaction_type": "Preču pārdošana",
+    "notes": "Toms 22467986",
+    "warranty_cards": 0,
+    "instructions": 0
+  },
+  "items": [
+    {
+      "code": "35124",
+      "EAN": "4752083119693",
+      "description": "Maisītājs virtuves izlietnei sienas BORA Style, BOSTY40D"
+    },
+    {
+      "code": "44213",
+      "EAN": "5902627728129",
+      "description": "Dušas paliktnis VENTO kvadrāts 90X90X16, akrils, SCSA321/-L08/BL321"
+    },
+    {
+      "code": "44229",
+      "EAN": "4752083119341",
+      "description": "Dušas siena Vento Napoli 90*195 stikls 6mm Easy Clean, A-20P"
+    },
+    {
+      "code": "199160",
+      "EAN": "8428519066416",
+      "description": "Dārza lodveida ventlīis ARCO SENA 1/2\", ar garo rokturi, 155103 / RHGC1"
+    },
+    {
+      "code": "352640",
+      "EAN": "4752083111581",
+      "description": "Vannas ūdens maisītāja snīpis Vento misiņa plakans 40 cm ar Neoperl aeratoru, 27B6442A 40 cm"
+    }
+  ],
+  "totals": {
+    "subtotal": 627.85,
+    "vat": 131.85,
+    "total": 759.70,
+    "total_in_words": "Septiņi simti piecdesmit deviņi Euro un 70 centi"
+  },
+  "packaging": {
+    "wood_kg": 0.0,
+    "cardboard_kg": 8.53,
+    "polyethylene_kg": 0.95,
+    "total_gross_weight_kg": 107.10
+  },
+  "responsible_persons": {
+    "issuer": {
+      "name": "Jelena Volkova",
+      "date": "08.04.2025"
+    },
+    "receiver": {
+      "name": "Toms Kalmi",
+      "date": "02.04.2025"
+    }
+  },
+  "accounting": {
+    "D_2310.01": 759.70,
+    "K_5721.01": 131.85,
+    "K_6110.02": 627.85
+  },
+  "contacts": {
+    "wholesale": {
+      "phone": "+371 67167720",
+      "emails": ["pasutijumi@cita.lv", "orders@cita.lv"]
+    },
+    "retail": {
+      "address": "Rīga, G.Astras 8",
+      "phone": "+371 67802291",
+      "email": "veikals@cita.lv"
+    }
+  }
+}

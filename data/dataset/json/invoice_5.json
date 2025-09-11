@@ -1,0 +1,58 @@
+{
+    "supplier": {
+        "name": "CERTEX",
+        "preparer": "Oskars Rancāns",
+        "contact_person": "Girts",
+        "contact_phone": "t.26552817",
+        "issuing_address": "Mežkalna iela 11, Rīga, LATVIJA",
+        "registration_number": "40003791169",
+        "VAT_number": "LV40003791169",
+        "legal_address": "Mežkalna iela 11, Rīga, LV-1058",
+        "phone": "+371 67611882",
+        "email": "info@certex.lv",
+        "website": "www.certex.lv"
+    },
+    "delivery": {
+        "address": "Piche SIA \"Vismaņi k-2\", Mārupes pag., Mārupes nov., LV2167",
+        "date": "16.04.2025",
+        "method": "AR KLIENTA TRANSPORTU",
+        "conditions": "NO NOLIKTAVAS / EX WORKS"
+    },
+    "client": {
+        "reference": "Aigars 29443640",
+        "order_number": "Mārupes parks 3",
+        "name": "Piche SIA",
+        "address": "\"Vismaņi k-2\", Mārupes pag., Mārupes nov., LV2167",
+        "registration_number": "LV40003743883"
+    },
+    "invoice": {
+        "number": "000582440",
+        "date": "16.04.2025",
+        "accompanying_document_number": "000582440",
+        "page": "1/1",
+        "client_number": "000374388",
+        "order_number": "7120257-1",
+        "payment_term": "30.04.2025",
+        "payment_conditions": "14 dienu laikā"
+    },
+    "items": [
+        {
+            "serial_number": 1,
+            "product_code": "700900602200050",
+            "EAN": "SIV25T62",
+            "description": "Siksna stipr. 2.5/5T 6m 35mm, LC 1000daN POWERTEX",
+            "quantity": 6,
+            "unit": "kompl",
+            "unit_price": 5.85,
+            "discount_percent": 15.0,
+            "total": 29.84,
+            "VAT_rate": 21.0
+        }
+    ],
+    "summary": {
+        "subtotal": 29.84,
+        "VAT_amount": 6.27,
+        "total_amount": 36.11,
+        "currency": "EUR"
+    }
+}

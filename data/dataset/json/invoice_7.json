@@ -1,0 +1,33 @@
+{
+    "supplier": {
+        "name": "WURTH sabiedrība ar ierobežotu atbildību",
+        "phone": "+371 677 889 96",
+        "website": "www.wurth.lv"
+    },
+    "document": {
+        "type": "Pavadzīme",
+        "date": "14.04.2025",
+        "page": "1 / 1",
+        "payment_term": "30 dienas"
+    },
+    "order": {
+        "sales_order_number": "809185",
+        "sales_order_date": "14.04.2025",
+        "delivery_note_number": "80899278",
+        "delivery_note_date": "14.04.2025",
+        "invoice_number": "1535132",
+        "invoice_date": "14.04.2025"
+    },
+    "client": {
+        "name": "Pīche SIA",
+        "address": "Mežciema iela 1, LV-2167 Mārupe",
+        "purchase_order": "Pārdošanas pārstāvis 1062 Andris Klients AIGARS Veikala pasūtījums MĀRUPE"
+    },
+    "summary": {
+        "subtotal": 213.37,
+        "VAT": 44.81,
+        "total": 258.18,
+        "currency": "EUR",
+        "total_in_words": "Divi simti piecdesmit astoņi eiro 18 centi"
+    }
+}

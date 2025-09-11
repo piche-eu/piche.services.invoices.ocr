@@ -1,0 +1,52 @@
+{
+  "invoice_details": {
+    "invoice_number": "64-4/24",
+    "date": "2024-04-25",
+    "service_provider": {
+      "name": "SIA \"LS Customs Services\"",
+      "registration_number": "41203019800",
+      "vat_code": "LV41203019800",
+      "address": "Pils iela 70-2, Ventspils, LV-3601",
+      "bank": {
+        "name": ["Luminor Bank AS Latvijas filiāle", "AS Swedbank"],
+        "code": ["RIKO LV 2X", "HABA LV 22"],
+        "account": ["LV34RIKO0002013010811", "LV84HABA0551038250261"]
+      }
+    },
+    "payer": {
+      "name": "SIA „PICHE”",
+      "registration_number": "40003743883",
+      "vat_code": "LV40003743883",
+      "address": "Dzirnieku iela 26, Mārupe, Mārupes pag., Mārupes nov., LV-2167",
+      "bank": {
+        "name": "AS Swedbank",
+        "code": "HABALV22",
+        "account": "LV77HABA0551045495802"
+      }
+    },
+    "services": [
+      {
+        "description": "Muitas brokera pakalpojums importa procedūrai 25/04/2024 MRN24LV000210R04385R0",
+        "quantity": 1,
+        "unit_price_eur": 33.06,
+        "vat_rate": "21%",
+        "total_eur": 33.06
+      }
+    ],
+    "summary": {
+      "subtotal_excl_vat_eur": 33.06,
+      "vat_amount_eur": 6.94,
+      "total_incl_vat_eur": 40.00,
+      "amount_in_words": "četrdesmit euro un 0 centi"
+    },
+    "payment_terms": {
+      "due_date": "2024-05-05"
+    },
+    "notes": {
+      "prepared_by": "Daiga Sūniņa",
+      "contact": "+371 257 555 28",
+      "email": "imports@lscustoms.lv",
+      "format": "Rēķins sagatavots elektroniski un derīgs bez paraksta"
+    }
+  }
+}

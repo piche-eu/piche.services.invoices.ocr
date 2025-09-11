@@ -1,0 +1,55 @@
+{
+  "invoice": {
+    "invoice_number": "ALB159277",
+    "date": "2024-04-15",
+    "agent": "Timermanis Artūrs",
+    "sender": {
+      "name": "ALBERT BERNER SIA",
+      "vat_number": "LV40003445966",
+      "registration_number": "40003445966",
+      "legal_address": "Līliju iela 20, Mārupe, Latvija, LV-2167",
+      "bank": {
+        "name": "AS SWEDBANK",
+        "code": "HABALV22",
+        "account": "LV15HABA0551023846130"
+      },
+      "loading_address": "Līliju iela 20, Mārupe, LV-2167"
+    },
+    "receiver": {
+      "name": "Pīche SIA",
+      "vat_number": "LV40003743883",
+      "registration_number": "40003743883",
+      "legal_address": "Dzīmieku iela 26, Mārupe, LV-2167",
+      "bank": {
+        "name": "AS SWEDBANK"
+      },
+      "delivery_address": "Lielmaņi, Mārupes pag., Mārupes nov., Latvija, LV-2167",
+      "contact": "+37129817115"
+    },
+    "carrier": {
+      "name": "ARTŪRS TIMERMANIS",
+      "transport_registration": "NI1742"
+    },
+    "transaction_description": "Preču pārdošana pārskaitījums/Bank transfer",
+    "payment_date": "2024-05-15",
+    "items": [
+      {
+        "npk": "1",
+        "article": "OH-30060",
+        "description": "300L LD Atkritumu maisi melni 10gb 120x126cmx60my",
+        "unit": "Rullis",
+        "quantity": 10,
+        "unit_price": 7.5,
+        "discount_percent": 27.33,
+        "discounted_price": 5.45,
+        "vat_rate": 21,
+        "total": 54.5
+      }
+    ],
+    "total_without_vat": 54.5,
+    "vat": 11.45,
+    "total_with_vat": 65.95,
+    "total_in_words": "SEŠDESMIT PIECI EIRO UN 95 CENTI",
+    "delivery_date": "2024-04-15"
+  }
+}
