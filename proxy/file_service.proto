@@ -1,0 +1,24 @@
+// file_service.proto
+syntax = "proto3";
+
+package filetransfer;
+
+message FileUploadRequest {
+  // Use a 'oneof' field to efficiently switch between sending metadata (first message) and data chunks (subsequent messages)
+  oneof data {
+    // 1. Metadata for the file
+    string filename = 1;
+    // 2. The actual byte chunk of the file
+    bytes chunk_data = 2;
+  }
+}
+
+message FileUploadResponse {
+  string message = 1;
+  int32 size = 2; // Total size in bytes of the file received
+}
+
+service FileService {
+  // Client streams multiple requests (chunks) and the server sends one final response
+  rpc UploadFile(stream FileUploadRequest) returns (FileUploadResponse);
+}
