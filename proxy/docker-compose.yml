@@ -1,0 +1,54 @@
+version: '3.3'
+services:
+    fastapi_server:
+        build: .
+        command: fastapi run /usr/app/fastapi_server.py
+        volumes:
+           # - ./input:/usr/app/input    # Our input image directory
+           # - ./output:/usr/app/output    # Our output image directory
+            - ./fastapi_server.py:/usr/app/app/fastapi_server.py:ro
+    #        - ./grpc_compiled/:/usr/app/grpc_compiled
+            - ./ocr/:/usr/app/ocr
+        expose:
+            - 8000
+        ports:
+                - "0.0.0.0:8000:8000/tcp"
+        networks: 
+                - ollama_network
+
+    # server:
+    #     build: .
+    #     command: python3 /usr/app/server.py
+    #     volumes:
+    #         - ./server.py:/usr/app/server.py:ro
+    #         - ./grpc_compiled/:/usr/app/grpc_compiled
+    #         - ./ocr/:/usr/app/ocr
+    #     expose:
+    #         - 50051
+    #     ports:
+    #         - "0.0.0.0:50051:50051/tcp"
+    #     networks: 
+    #         - ollama_network
+
+    ollama:
+#        command: ollama serve 
+        image: ollama/ollama:latest
+        container_name: ollama
+        networks:
+            - ollama_network
+        volumes:
+            - ollama_data:/root/.ollama
+        expose:
+            - 11434
+        ports:
+            - "11434:11434"
+        restart: unless-stopped
+
+networks:
+    ollama_network:
+        driver: bridge
+        
+
+volumes:
+    ollama_data:
+        name: ollama_data

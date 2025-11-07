@@ -1,34 +1,42 @@
 import os
 import sys
+sys.path.append(".")
 import grpc
+sys.path.append("/usr/app/grpc_compiled/")
 import file_service_pb2
 import file_service_pb2_grpc
 from concurrent import futures
 import logging
-from dotenv import load_dotenv, find_dotenv
-load_dotenv(find_dotenv())
+#from dotenv import load_dotenv, find_dotenv
+#load_dotenv(find_dotenv())
 logger = logging.getLogger(__name__)
-sys.path.append("..")
 from ocr import ocr
+from ocr import ocr_llm
+import pandas as pd
+import json
 
 __all__ = "FileServer"
-SERVER_ADDRESS = "localhost:50051"
-SERVER_ID = 1
 
+SERVER_ADDRESS = "0.0.0.0:50051"
+SERVER_ID = 1
+import multiprocessing
+multiprocessing.set_start_method("spawn", force=True)
 
 class FileServiceServicer(file_service_pb2_grpc.FileServiceServicer):
-
+    
+    def __init__(self):
+        super().__init__()
+        llm_config = ocr_llm.LLMConfig
+        self.llm = ocr_llm.OCRLLM(llm_config)
+    
     def UploadFile(self, request_iterator, context):
         """Server-side implementation for the client-streaming UploadFile RPC."""
         filename = None
         file_size = 0
         file_path = "uploads/"  # Directory to save files
-
         # 1. Ensure upload directory exists
         os.makedirs(file_path, exist_ok=True)
-
         # based on the config stage process this file and extract ocr;
-
         # 2. Iterate through the stream of incoming messages
         for request in request_iterator:
             # First message must contain the filename
@@ -68,19 +76,25 @@ class FileServiceServicer(file_service_pb2_grpc.FileServiceServicer):
         bytes64 = ocr_engine.bytes2bytes64(chunk)
         try:
             response = ocr_engine.mistral_ocr(bytes64)
+            mistral_result = response.pages[0].markdown
+            
+            #im_path = ocr_engine.process_file("./" + file_path + "/" + filename)
+            #paddle_ocr, tesseract = ocr_engine.im2text(im_path)
+            #print("Mistral Result: ", paddle_ocr, tesseract )
         except Exception as e:
             print(f"!Exception: {e}")
-            # Return the error code;
         finally:
-            #ocr_response = ocr_engine.doc2text("./" + file_path + "/" + filename)
-            fast_vlm_output = ocr_engine.fastvlm_parser(bytes64)
+            # print("Run the LLM for the text extraction:")
+            llm_response = self.llm.extract_text(mistral_result)
+            df = pd.DataFrame.from_dict(llm_response, orient='index')
+            df.columns = ['values']
+            df = df.iloc[1:]
+            md = df.to_markdown()
         # 3. Close the file and return the final response
         if filename and file_handle:
             file_handle.close()
             print(f"Finished upload. Saved {filename} ({file_size} bytes)")
-            return file_service_pb2.FileUploadResponse(
-                message=f"{fast_vlm_output}", size=file_size
-            )
+            return file_service_pb2.FileUploadResponse(message=f"{md}", size=file_size)
         else:
             context.abort(grpc.StatusCode.ABORTED, "No file data received.")
 
