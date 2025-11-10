@@ -1,5 +1,6 @@
 import grpc
 import sys
+
 sys.path.append(".")
 sys.path.append("./grpc_compiled/")
 sys.path.append("/usr/app/grpc_compiled/")
@@ -8,6 +9,7 @@ import file_service_pb2_grpc
 import os
 import pandas as pd
 import pdb
+
 # Define the size of each chunk
 CHUNK_SIZE = 1024 * 1024  # 1MB
 
@@ -15,13 +17,13 @@ CHUNK_SIZE = 1024 * 1024  # 1MB
 class Client:
     def __init__(self):
         return
-    
+
     def send_file(self, filepath):
         with grpc.insecure_channel("localhost:50051") as channel:
             stub = file_service_pb2_grpc.FileServiceStub(channel)
             return self.upload_file(stub, filepath)
 
-    def upload_file(self,stub, file_to_upload):
+    def upload_file(self, stub, file_to_upload):
         """Calls the client-streaming RPC."""
         print("Start file transfer")
         try:
@@ -81,6 +83,6 @@ if __name__ == "__main__":
     with grpc.insecure_channel("0.0.0.0:50051") as channel:
         stub = file_service_pb2_grpc.FileServiceStub(channel)
         filepath = "/Users/leonid/Desktop/HotCode/piche.invoice.ocr/data/dataset/pdf/v2/inv/0057125VEUB2B/Faktura_VAT_0057125VEUB2B.pdf"
-        print("create client") 
+        print("create client")
         client = Client()
         client.upload_file(stub, filepath)

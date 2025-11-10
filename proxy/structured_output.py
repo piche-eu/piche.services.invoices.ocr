@@ -1,15 +1,17 @@
 from pydantic import BaseModel
 import dspy
 
+
 class Date(BaseModel):
     year: int
     month: int
     day: int
     hour: int
 
+
 class InvoiceData(dspy.Signature):
-    """You are invoice extractor service, by given the filecontent you extract the required fields
-    """
+    """You are invoice extractor service, by given the filecontent you extract the required fields"""
+
     invoiceNumber: str = dspy.OutputField(desc="Invoice number")
     invoiceDate: Date = dspy.OutputField(desc="Date when invoice was issued")
     seller: str = dspy.OutputField(desc="The name of the seller")
@@ -26,5 +28,5 @@ class InvoiceData(dspy.Signature):
     summary: str = dspy.OutputField(desc="Summary of the invoice file")
     # filename:str = dspy.InputField();
     filecontent: str = dspy.InputField(desc="The content of the invoice file")
-    #prompt: str = dspy.InputField()
+    # prompt: str = dspy.InputField()
     # error:str = dspy.InputField();

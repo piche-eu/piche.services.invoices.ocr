@@ -1,14 +1,17 @@
 import os
 import sys
+
 sys.path.append(".")
 import grpc
+
 sys.path.append("/usr/app/grpc_compiled/")
 import file_service_pb2
 import file_service_pb2_grpc
 from concurrent import futures
 import logging
-#from dotenv import load_dotenv, find_dotenv
-#load_dotenv(find_dotenv())
+
+# from dotenv import load_dotenv, find_dotenv
+# load_dotenv(find_dotenv())
 logger = logging.getLogger(__name__)
 from ocr import ocr
 from ocr import ocr_llm
@@ -20,15 +23,17 @@ __all__ = "FileServer"
 SERVER_ADDRESS = "0.0.0.0:50051"
 SERVER_ID = 1
 import multiprocessing
+
 multiprocessing.set_start_method("spawn", force=True)
 
+
 class FileServiceServicer(file_service_pb2_grpc.FileServiceServicer):
-    
+
     def __init__(self):
         super().__init__()
         llm_config = ocr_llm.LLMConfig
         self.llm = ocr_llm.OCRLLM(llm_config)
-    
+
     def UploadFile(self, request_iterator, context):
         """Server-side implementation for the client-streaming UploadFile RPC."""
         filename = None
@@ -77,17 +82,17 @@ class FileServiceServicer(file_service_pb2_grpc.FileServiceServicer):
         try:
             response = ocr_engine.mistral_ocr(bytes64)
             mistral_result = response.pages[0].markdown
-            
-            #im_path = ocr_engine.process_file("./" + file_path + "/" + filename)
-            #paddle_ocr, tesseract = ocr_engine.im2text(im_path)
-            #print("Mistral Result: ", paddle_ocr, tesseract )
+
+            # im_path = ocr_engine.process_file("./" + file_path + "/" + filename)
+            # paddle_ocr, tesseract = ocr_engine.im2text(im_path)
+            # print("Mistral Result: ", paddle_ocr, tesseract )
         except Exception as e:
             print(f"!Exception: {e}")
         finally:
             # print("Run the LLM for the text extraction:")
             llm_response = self.llm.extract_text(mistral_result)
-            df = pd.DataFrame.from_dict(llm_response, orient='index')
-            df.columns = ['values']
+            df = pd.DataFrame.from_dict(llm_response, orient="index")
+            df.columns = ["values"]
             df = df.iloc[1:]
             md = df.to_markdown()
         # 3. Close the file and return the final response
