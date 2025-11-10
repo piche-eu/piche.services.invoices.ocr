@@ -5,8 +5,8 @@ ENV PYTHONUNBUFFERED=1
 WORKDIR /usr/app
 COPY . /usr/app
 RUN apt-get update
-RUN apt-get install python python3-pip -y
-RUN apt install build-essential python3-dev
+#RUN apt-get install python python3-pip -y
+#RUN apt install build-essential python3-dev
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         libjpeg-dev \
@@ -17,13 +17,10 @@ RUN python3 -m pip install --upgrade pip
 
 RUN python3 -m pip install  -r requirements.txt
 RUN pip3 install Cython
-RUN pip3 install fastapi[standart]
 RUN pip3 install --upgrade Cython
+RUN pip3 install fastapi[standart]
 RUN python3 -m pip install --upgrade Pillow
-RUN pip3 install -r requirements.txt
 RUN pip3 install grpcio==1.76.0
 RUN pip3 install protobuf==6.33.0
-RUN pip3 install pymupdf
-RUN pip3 install ollama
 
 EXPOSE 8000

@@ -4,14 +4,14 @@ services:
         build: .
         command: fastapi run /usr/app/fastapi_server.py
         volumes:
-            - ./fastapi_server.py:/usr/app/app/fastapi_server.py:ro
-            - ./ocr/:/usr/app/ocr
+             - ./fastapi_server.py:/usr/app/app/fastapi_server.py:ro
+             - ./ocr/:/usr/app/ocr
         expose:
-            - 8000
+             - 8000
         ports:
-                - "0.0.0.0:8000:8000/tcp"
+            - "0.0.0.0:8000:8000/tcp"
         networks: 
-                - ollama_network
+            - ollama_network
 
     ollama:
         image: ollama/ollama:latest
