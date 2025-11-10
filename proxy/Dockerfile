@@ -25,5 +25,5 @@ RUN pip3 install grpcio==1.76.0
 RUN pip3 install protobuf==6.33.0
 RUN pip3 install pymupdf
 RUN pip3 install ollama
-#EXPOSE 50051
+
 EXPOSE 8000
