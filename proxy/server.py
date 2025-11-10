@@ -2,21 +2,21 @@ import os
 import sys
 
 sys.path.append(".")
-import grpc
-
 sys.path.append("/usr/app/grpc_compiled/")
+import grpc
 import file_service_pb2
 import file_service_pb2_grpc
 from concurrent import futures
 import logging
 
-# from dotenv import load_dotenv, find_dotenv
-# load_dotenv(find_dotenv())
 logger = logging.getLogger(__name__)
 from ocr import ocr
 from ocr import ocr_llm
+from logging import logger
 import pandas as pd
-import json
+from dotenv import load_dotenv, find_dotenv
+
+load_dotenv(find_dotenv())
 
 __all__ = "FileServer"
 
@@ -82,14 +82,10 @@ class FileServiceServicer(file_service_pb2_grpc.FileServiceServicer):
         try:
             response = ocr_engine.mistral_ocr(bytes64)
             mistral_result = response.pages[0].markdown
-
-            # im_path = ocr_engine.process_file("./" + file_path + "/" + filename)
-            # paddle_ocr, tesseract = ocr_engine.im2text(im_path)
-            # print("Mistral Result: ", paddle_ocr, tesseract )
         except Exception as e:
-            print(f"!Exception: {e}")
+            logger.info(f"!Exception: {e}")
         finally:
-            # print("Run the LLM for the text extraction:")
+            logger.info("Run the LLM for the text extraction:")
             llm_response = self.llm.extract_text(mistral_result)
             df = pd.DataFrame.from_dict(llm_response, orient="index")
             df.columns = ["values"]
@@ -98,7 +94,7 @@ class FileServiceServicer(file_service_pb2_grpc.FileServiceServicer):
         # 3. Close the file and return the final response
         if filename and file_handle:
             file_handle.close()
-            print(f"Finished upload. Saved {filename} ({file_size} bytes)")
+            logger.info(f"Finished upload. Saved {filename} ({file_size} bytes)")
             return file_service_pb2.FileUploadResponse(message=f"{md}", size=file_size)
         else:
             context.abort(grpc.StatusCode.ABORTED, "No file data received.")
@@ -110,7 +106,7 @@ def serve():
         FileServiceServicer(), server
     )
     server.add_insecure_port(SERVER_ADDRESS)
-    print("------------------start Python GRPC server")
+    logger.info("------------------start Python GRPC server")
     server.start()
     server.wait_for_termination()
 
