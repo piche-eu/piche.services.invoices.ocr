@@ -7,7 +7,6 @@ sys.path.append("/usr/app/grpc_compiled/")
 import file_service_pb2
 import file_service_pb2_grpc
 import os
-import pandas as pd
 import pdb
 
 # Define the size of each chunk
@@ -74,15 +73,3 @@ def send_configuration(stub, config):
         print(f"An error occurred: {e.details()}")
 
     return
-
-
-# --- Client Execution ---
-if __name__ == "__main__":
-    # Use a secure channel for production; insecure for testing
-    print("Open Channel")
-    with grpc.insecure_channel("0.0.0.0:50051") as channel:
-        stub = file_service_pb2_grpc.FileServiceStub(channel)
-        filepath = "/Users/leonid/Desktop/HotCode/piche.invoice.ocr/data/dataset/pdf/v2/inv/0057125VEUB2B/Faktura_VAT_0057125VEUB2B.pdf"
-        print("create client")
-        client = Client()
-        client.upload_file(stub, filepath)

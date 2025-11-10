@@ -17,6 +17,7 @@ langchain
 langchain-mistralai
 langchain-ollama
 fastapi[standard]
+python-dotenv
 #numpy==1.19.0
 #Pillow==8.1.1
 
